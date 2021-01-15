@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A363B"
+    tools:context=".Product_page">
+
+
+    <ImageView
+        android:id="@+id/return_to_main"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/background_circle"
+        android:elevation="18dp"
+        android:padding="3dp"
+
+        android:src="@drawable/ic_baseline_chevron_left_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageView"
+        android:layout_width="405dp"
+        android:layout_height="441dp"
+        android:elevation="12dp"
+
+        android:padding="24dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img1"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/return_to_main"
+        app:riv_corner_radius="2dp"
+        tools:ignore="MissingConstraints"></com.makeramen.roundedimageview.RoundedImageView>
+
+    <TextView
+        android:id="@+id/DressName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dress Name"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/roundedImageView"
+        app:layout_constraintVertical_bias="0.045"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textColor="#DCD6D6"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/DressName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <ImageView
+
+        android:id="@+id/click_to_addcart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_circle"
+        android:elevation="18dp"
+        android:padding="10dp"
+        android:src="@drawable/add_to_cart"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.605"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/buyproduct"
+        android:layout_width="289dp"
+        android:layout_height="49dp"
+        android:background="@drawable/background_circle"
+        android:elevation="18dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.602"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Rs. 699/-"
+android:textStyle="bold"
+        android:textColor="#fff"
+        android:elevation="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buyproduct"
+        app:layout_constraintEnd_toEndOf="@+id/buyproduct"
+        app:layout_constraintStart_toStartOf="@+id/buyproduct"
+        app:layout_constraintTop_toTopOf="@+id/buyproduct"
+        tools:ignore="MissingConstraints">
+
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
